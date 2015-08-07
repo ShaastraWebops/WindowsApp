@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.ApplicationInsights;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -36,6 +37,8 @@ namespace Shaastra
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            TelemetryClient telemetryclient = new TelemetryClient();
+            telemetryclient.TrackPageView("MainPage");
             // TODO: Prepare page for display here.
 
             // TODO: If your application contains multiple pages, ensure that you are

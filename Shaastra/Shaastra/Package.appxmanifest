@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
 
-  <Identity Name="17a95e74-18cb-46fb-9a64-1c4e751ccac6"
-            Publisher="CN=black_viking"
+  <Identity Name="0a69b852-1493-4494-8d02-dd836c5de43b"
+            Publisher="CN=nisha"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="17a95e74-18cb-46fb-9a64-1c4e751ccac6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="0a69b852-1493-4494-8d02-dd836c5de43b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Shaastra</DisplayName>
-    <PublisherDisplayName>black_viking</PublisherDisplayName>
+    <PublisherDisplayName>nisha</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
