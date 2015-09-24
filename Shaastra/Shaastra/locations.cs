@@ -7,16 +7,9 @@ using Windows.Devices.Geolocation;
 
 namespace Shaastra
 {
-    public class positionData
-    {
-        public int alt { get; set; }
-        public double lati { get; set; }
-        public double longi { get; set; }
-    }
     public class locationData
     {        
         public string Name { get; set; }
-        public string Serial { get; set; }
         public int alt { get; set; }
         public double lati { get; set; }
         public double longi { get; set; }

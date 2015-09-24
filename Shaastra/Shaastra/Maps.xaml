@@ -20,17 +20,26 @@
                   SelectionMode="Single"
                   Height="auto"
                   VerticalAlignment="Top"
-                  >
+                  HorizontalAlignment="Center"
+                  Margin="0,20,0,0"
+                  >            
+            
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}"
-                               Tag="{Binding Serial}"/>
-                </DataTemplate>
+                               FontSize="16"
+                               Margin="10"
+                               />
+                </DataTemplate>                
             </GridView.ItemTemplate>
 
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <ItemsWrapGrid MaximumRowsOrColumns="3"/>
+                    <ItemsWrapGrid MaximumRowsOrColumns="3"
+                                   Opacity="0.9"
+                                   Orientation="Horizontal"
+                                   Background="#006699"
+                                   />
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
 
