@@ -46,6 +46,16 @@ namespace Shaastra
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+
+           
+
         }
+
+        // **** please remove this when proper navigation buttons have been added
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {           
+            Frame.Navigate(typeof(Maps));            
+        }
+        // for testing purpose only  ****
     }
 }

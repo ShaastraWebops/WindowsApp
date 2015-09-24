@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <!-- Please delete later -->
+        <Button Click="Button_Click"
+                HorizontalAlignment="Center"
+                Content="Launch"/>
+        <!-- Please delete later -->
     </Grid>
 </Page>

@@ -5,7 +5,7 @@
             Publisher="CN=nisha"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="0a69b852-1493-4494-8d02-dd836c5de43b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="3621f786-07b3-4809-bff9-a83a939037bb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Shaastra</DisplayName>
