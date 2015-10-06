@@ -20,6 +20,9 @@
         <Button Grid.Row="1" Click="Events_Click"
                 HorizontalAlignment="Center"
                 Content="Events"/>
+        <Button Grid.Row="1" Click="Button_Click_1"
+                HorizontalAlignment="Center"
+                Content="Shaastra Home" Margin="127,0,124,263"/>
 
         <!-- Please delete later -->
     </Grid>

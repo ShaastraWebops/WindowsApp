@@ -51,5 +51,10 @@ namespace Shaastra
         {
             Frame.Navigate(typeof (EventsCategory));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Shaastra_Home.ShaastraMain));
+        }
     }
 }
