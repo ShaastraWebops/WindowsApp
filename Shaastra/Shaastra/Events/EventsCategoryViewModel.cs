@@ -9,7 +9,7 @@ namespace Shaastra.Events
 {
     class EventsCategoryViewModel
     {
-        List<EventsCategoryModel> Items { get; set; }
+        public List<EventsCategoryModel> Items { get; set; }
         
         private EventsCategoryViewModel() { }
 

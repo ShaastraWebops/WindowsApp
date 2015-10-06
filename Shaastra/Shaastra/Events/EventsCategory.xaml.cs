@@ -1,4 +1,7 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using System;
+using System.Diagnostics;
+using Windows.UI.Popups;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -20,8 +23,13 @@ namespace Shaastra.Events
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            EventsCategoryViewModel eventsCategoryViewModel = await EventsCategoryViewModel.CreateTaskAsync();
+            EventsCategoryView.ItemsSource = eventsCategoryViewModel.Items;
+            stopwatch.Stop();
+            await new MessageDialog("Time elapsed = " + stopwatch.ElapsedMilliseconds).ShowAsync();
         }
     }
 }

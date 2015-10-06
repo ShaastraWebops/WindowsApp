@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Shaastra.Helper;
 
 namespace Shaastra.Events
 {
@@ -15,5 +18,17 @@ namespace Shaastra.Events
         public string LastUpdatedBy { get; set; }
         public int V { get; set; }
         public List<object> Events { get; set; }
+
+        public string ImageUrl
+        {
+            get
+            {
+                StringBuilder stringBuilder = new StringBuilder(ShaastraWeb.ImageUri);
+                stringBuilder.Append(Imageid);
+                stringBuilder.Append("/");
+                stringBuilder.Append(Imagename);
+                return stringBuilder.ToString();
+            }
+        }
     }
 }
