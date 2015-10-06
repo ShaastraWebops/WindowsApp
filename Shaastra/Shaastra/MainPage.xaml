@@ -9,10 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <!-- Please delete later -->
-        <Button Click="Button_Click"
+        <Button Grid.Row="0" Click="Button_Click"
                 HorizontalAlignment="Center"
                 Content="Launch"/>
+        <Button Grid.Row="1" Click="Events_Click"
+                HorizontalAlignment="Center"
+                Content="Events"/>
+
         <!-- Please delete later -->
     </Grid>
 </Page>
